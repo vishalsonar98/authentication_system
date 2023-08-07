@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
 		User userEntity = mapObject.mapUserVoToUserEntity(user);
 		Role role = null;
 
-		role = roleRepository.findById(101).get();
+		role = roleRepository.findById(102).get();
 		userEntity.setRole(role);
 
 		response = userRepository.save(userEntity);
